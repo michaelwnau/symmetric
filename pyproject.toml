@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "symmetric"
+version = "0.1.0"
+description = "Symmetric is a copilot for maintenance of industrial plant equipment."
+authors = ["Michael Nau <michaelwnau@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+transformers = "^4.41.2"
+langchain = "^0.2.1"
+jina = "^3.25.1"
+ruff = "^0.4.7"
+text2vec = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+glove = "^1.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
