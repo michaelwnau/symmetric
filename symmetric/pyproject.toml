@@ -1,0 +1,25 @@
+[project]
+name = "symmetric"
+version = "0.1.0"
+description = "Symmetric is a maintenance copilot for industrial plant equipment."
+authors = [
+    {name = "Michael Nau", email = "michaelwnau@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "transformers>=4.41.2,<5.0.0",
+    "langchain>=0.2.1,<0.3.0",
+    "jina>=3.25.1,<4.0.0",
+    "ruff>=0.4.7,<0.5.0",
+    "text2vec>=0.1.0,<0.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "glove>=1.0.2,<2.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
